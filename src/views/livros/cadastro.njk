@@ -1,0 +1,42 @@
+{% extends "layout.njk" %}
+
+{% set title = "Cadastro de Livros" %}
+
+{% block content %}
+
+  
+<h1 class="my-5 text-center">{{ title }}</h1>
+<hr>
+  <form method="post" enctype="multipart/form-data" action="/cadastrar/action">
+
+   
+    <div class="form-group">
+    <label>Título: </label>
+    <input class="form-control" type="text" name="name"  required />
+    </div>
+
+    <div class="form-group">
+    <label>Autor: </label>
+    <input class="form-control" type="text" name="autor" required/>
+    </div>
+ <div class="form-group">
+    <label>Editora: </label>
+    <input class="form-control" type="text" name="editora" required/>
+    </div>
+
+ <div class="form-group">
+    <label>Edição: </label>
+    <input class="form-control" type="text" name="edicao" required/>
+    </div>
+
+    <div class="form-group">
+    <label>Capa: </label>
+    <input type="file" class="form-control" name="image" required/>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+
+  </form>
+
+
+{% endblock %}

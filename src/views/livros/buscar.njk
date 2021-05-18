@@ -1,0 +1,35 @@
+{% extends "layout.njk" %}
+
+{% set title = "Resultado de Busca" %}
+
+{% block content %}
+
+
+<h1 class="my-5 text-center">{{ title }}  para {{ paramdeBuscar }} </h1>
+<hr>
+
+<section class="card-deck">
+  {% for livroget in resultado %}
+   <div class="col-sm-6 col-lg-4 col-xl-3 mb-3">
+    <div class="card">
+
+     <img src="{{ livroget.image }}" class="card-img-top" alt="{{ livroget.name }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ livroget.name }}</h5>
+   </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">AUTOR: {{ livroget.autor }} </li>
+    <li class="list-group-item">EDITORA: {{ livroget.editora }}</li>
+    <li class="list-group-item">EDICAO: {{ livroget.edicao }}</li>
+  </ul>
+
+    </div>
+  </div>
+  
+
+  {% endfor %}
+</section>
+{% endblock %}
+
+{% block script %}
+{% endblock %}

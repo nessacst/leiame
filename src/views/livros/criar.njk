@@ -1,0 +1,41 @@
+{% extends "layout.njk" %}
+
+{% set title = "Criar conta" %}
+
+{% block content %}
+  
+<h1 class="my-5 text-center">{{ title }}</h1>
+
+<hr>
+    <form id="formUser" action="/signup" method="post">
+
+    <div class="form-group">
+    <label>Nome: </label>
+        <input type="text" class="form-control" required  id="user-name" name="name">
+    </div>
+
+    <div class="form-group">
+    <label>E-mail: </label>
+        <input type="email" class="form-control" required id="user-email" name="email">
+    </div>
+ <div class="form-group">
+    <label>Senha: </label>
+  <input type="password" class="form-control" required id="user-password" name="password">
+       </div>
+
+ <div class="form-group">
+    <label>Confirmar Senha: </label>
+        <input type="password" class="form-control"  required id="user-confirm_password" name="confirm_password">
+    </div>
+
+
+   <button type="submit" class="btn btn-primary">CRIAR CONTA</button>
+
+  </form>
+
+
+
+
+
+</div></div></div>
+{% endblock %}

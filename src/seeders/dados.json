@@ -1,0 +1,37 @@
+{
+  "livos": [
+    {
+      "id": 1,
+      "name": "O Alquimista",
+      "image": "/imgs/1.jpg",
+      "autor": "Paulo Coelho",
+      "edicao": 1,
+      "editora": "Paralela"
+    },
+    {
+      "id": 2,
+      "name": "Harry Potter",
+      "image": "/imgs/2.jpg",
+      "autor": "JKR",
+      "edicao": 1,
+      "editora": "Paralela"
+    },
+    {
+      "id": 3,
+      "name": "O monege e o executivo",
+      "image": "/imgs/3.jpg",
+      "autor": "JCH",
+      "edicao": 1,
+      "editora": "lider"
+    }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "name": "vanessa",
+      "email": "vanessa@email.com",
+      "password": "admin"
+    }
+  ]
+}
